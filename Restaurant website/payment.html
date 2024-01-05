@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment</title>
+    
+    <link rel="stylesheet" href="payemnt.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <h1>Pay Now</h1>
+        <form action="">
+            <label for="country">country
+                <select name="country" id="country">
+                    <option value="India">India</option>
+                    <option value="England">England</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Ireland">Ireland</option>
+                </select>
+            </label>
+            <label for="cardno">Card Number
+                <input type="text" name="cardno" id="cardno" maxlength="19" required onkeypress="cardspace()"/>
+            </label>
+            <div class="float">
+             <label for="validtill">Valid till 
+             <input type="TEXT" name="validtill" id="validtill" maxlength="7" required onkeypress="addSlashes()"/>
+             </label>
+             <label for="cvv">cvv
+                <input type="text" name="cvv" id="cvv" required maxlength="3"/>  
+             </label>
+             </div>
+             <label for="checkbox">
+                <input type="checkbox" name="checkbox" id="checkbox"/>
+                <p>Payment address is same as the delivery address</p>
+             </label>
+             <p>No COD available</p>
+             <a href="sucessfull.html"><button>Pay</button></a>
+            </div>
+        </form>
+    
+    <script src="payment.js"></script>
+</body>
+</html>
